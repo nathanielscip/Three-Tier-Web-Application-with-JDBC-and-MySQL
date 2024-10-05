@@ -1,0 +1,131 @@
+<!-- Project 3- Nathaniel Scipio -->
+<web-app>
+    <display-name>
+        Project-3
+    </display-name>
+    <description>
+        Web Application for Project-3.
+    </description>
+<!-- servlet definitions -->
+    <servlet>
+        <servlet-name>Authentication</servlet-name>
+        <description>
+            Servlet that authenticates user.
+        </description>
+        <servlet-class>project3dev.AuthenticationServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>root</servlet-name>
+        <description>
+            Servlet for user with root credentials.
+        </description>
+        <servlet-class>project3dev.RootUserServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>client</servlet-name>
+        <description>
+            Servlet for user with client credentials.
+        </description>
+        <servlet-class>project3dev.ClientUserServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>dataEntry</servlet-name>
+        <description>
+            Servlet for user with data entry credentials.
+        </description>
+        <servlet-class>project3dev.dataentryUserServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>insertPart</servlet-name>
+        <description>
+            Servlet for user with data entry credentials entering data in parts table.
+        </description>
+        <servlet-class>project3dev.InsertPartServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>insertSupplier</servlet-name>
+        <description>
+            Servlet for user with data entry credentials entering data in suppliers table.
+        </description>
+        <servlet-class>project3dev.InsertSupplierServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>insertJob</servlet-name>
+        <description>
+            Servlet for user with data entry credentials entering data in jobs table.
+        </description>
+        <servlet-class>project3dev.InsertJobServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>insertShipment</servlet-name>
+        <description>
+            Servlet for user with data entry credentials entering data in shipments table.
+        </description>
+        <servlet-class>project3dev.InsertShipmentServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>accountant</servlet-name>
+        <description>
+            Servlet for user with accountant credentials.
+        </description>
+        <servlet-class>project3dev.accountantUserServlet</servlet-class>
+    </servlet>
+    
+<!-- Servlet Mappings-->
+    <servlet-mapping>
+        <servlet-name>Authentication</servlet-name>
+        <url-pattern>/Authentication</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>root</servlet-name>
+        <url-pattern>/root</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>client</servlet-name>
+        <url-pattern>/client</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>dataEntry</servlet-name>
+        <url-pattern>/dataEntry</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>insertPart</servlet-name>
+        <url-pattern>/insertPart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>insertSupplier</servlet-name>
+        <url-pattern>/insertSupplier</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>insertJob</servlet-name>
+        <url-pattern>/insertJob</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>insertShipment</servlet-name>
+        <url-pattern>/insertShipment</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>accountant</servlet-name>
+        <url-pattern>/accountant</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>authentication.html</welcome-file>
+    </welcome-file-list>
+</web-app>

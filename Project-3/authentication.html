@@ -1,0 +1,72 @@
+<!-- Project 3- Nathaniel Scipio -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Authentication</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            font-size: 22px;
+        }
+        h1 {
+            color: lightblue;
+            font-size: 38px; 
+        }
+        h2 {
+            color: white;
+            font-size: 30px; 
+        }
+        h3 {
+            color: white;
+            font-size: 26px; 
+        }
+        form {
+            margin-top: 100px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-right: 20px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 250px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: green;
+            color: black;
+            padding: 15px 25px;
+            border: none;
+            cursor: pointer;
+        }
+        .line {
+            border-top: 5px solid white;
+            margin: 20px 0;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Summer 2024 Project 3 Enterprise System</h1>
+    <h2>A Servlet/JSP-based Multi-Tiered Enterprise Application Using A Tomcat Container</h2>
+    <h3>- User Authentication Page -</h3>
+    <div class="line"></div>
+    <form action="Authentication" method="get">
+        <div>
+            <label for="username">UserName</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Click To Authenticate</button>
+    </form>
+</body>
+</html>
